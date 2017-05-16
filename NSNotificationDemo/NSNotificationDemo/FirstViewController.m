@@ -23,7 +23,7 @@
     [super viewDidLoad];
 
     //实时监听通知，注册通知
-    
+    //第二次监听
     [[NSNotificationCenter defaultCenter]addObserver:self selector:@selector(receiveNoti:) name:@"DogNoti" object:nil];
     // Do any additional setup after loading the view from its nib.
 }
