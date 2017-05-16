@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SecondViewController">
+            <connections>
+                <outlet property="dogAge" destination="VLD-Mn-QT2" id="9kd-Wr-RYf"/>
+                <outlet property="dogName" destination="c3D-UP-XA2" id="QBa-dh-12V"/>
+                <outlet property="dogSex" destination="seW-kd-gq8" id="EFM-DS-2gv"/>
+                <outlet property="dogType" destination="2fJ-mO-gtW" id="zXM-4I-Qk8"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sFr-D6-VAw">
+                    <rect key="frame" x="225" y="426" width="150" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="NIs-5R-oYW"/>
+                    </constraints>
+                    <state key="normal" title="返回查看录入狗的信息">
+                        <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="backClick:" destination="-1" eventType="touchUpInside" id="cNk-Nb-C1M"/>
+                    </connections>
+                </button>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="🐶的名字" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="c3D-UP-XA2">
+                    <rect key="frame" x="252" y="135" width="97" height="30"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="🐶的品种" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2fJ-mO-gtW">
+                    <rect key="frame" x="252" y="206" width="97" height="30"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="🐶的年龄" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="VLD-Mn-QT2">
+                    <rect key="frame" x="252" y="279" width="97" height="30"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="🐶的性别" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="seW-kd-gq8">
+                    <rect key="frame" x="252" y="354" width="97" height="30"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+            </subviews>
+            <color key="backgroundColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="c3D-UP-XA2" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="50" id="AN2-Od-OVg"/>
+                <constraint firstAttribute="trailing" secondItem="VLD-Mn-QT2" secondAttribute="trailing" constant="50" id="BLa-Wq-LdI"/>
+                <constraint firstItem="2fJ-mO-gtW" firstAttribute="top" secondItem="c3D-UP-XA2" secondAttribute="bottom" constant="50" id="Eq2-Kq-nhh"/>
+                <constraint firstAttribute="trailing" secondItem="seW-kd-gq8" secondAttribute="trailing" constant="50" id="FRc-Bt-tTN"/>
+                <constraint firstItem="2fJ-mO-gtW" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="50" id="GrU-eT-sqx"/>
+                <constraint firstAttribute="trailing" secondItem="2fJ-mO-gtW" secondAttribute="trailing" constant="50" id="V9W-gG-PyF"/>
+                <constraint firstAttribute="trailing" secondItem="c3D-UP-XA2" secondAttribute="trailing" constant="50" id="Vwb-KJ-C4L"/>
+                <constraint firstItem="VLD-Mn-QT2" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="50" id="YKy-Sk-L8M"/>
+                <constraint firstItem="sFr-D6-VAw" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="50" id="Ysw-Hl-LrZ"/>
+                <constraint firstItem="VLD-Mn-QT2" firstAttribute="top" secondItem="2fJ-mO-gtW" secondAttribute="bottom" constant="50" id="b7Q-M8-IRk"/>
+                <constraint firstItem="c3D-UP-XA2" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="100" id="ggB-oj-5xh"/>
+                <constraint firstItem="seW-kd-gq8" firstAttribute="top" secondItem="VLD-Mn-QT2" secondAttribute="bottom" constant="50" id="h2n-x4-U2p"/>
+                <constraint firstAttribute="trailing" secondItem="sFr-D6-VAw" secondAttribute="trailing" constant="50" id="pQv-ww-mjW"/>
+                <constraint firstItem="sFr-D6-VAw" firstAttribute="top" secondItem="seW-kd-gq8" secondAttribute="bottom" constant="50" id="szr-0g-J3i"/>
+                <constraint firstItem="seW-kd-gq8" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="50" id="ydd-k3-De3"/>
+            </constraints>
+        </view>
+    </objects>
+</document>
